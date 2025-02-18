@@ -1,0 +1,22 @@
+{
+  "name": "mongodb",
+  "version": "1.0.0",
+  "description": "Tutorial mongodb",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clxsilva/MongoDB.git"
+  },
+  "author": "Claudio Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clxsilva/MongoDB/issues"
+  },
+  "homepage": "https://github.com/clxsilva/MongoDB#readme",
+  "dependencies": {
+    "mongoose": "^8.10.1"
+  }
+}
