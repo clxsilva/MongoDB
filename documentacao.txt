@@ -1,0 +1,83 @@
+No JavaScript, o uso de letras maiúsculas e minúsculas segue convenções específicas
+que ajudam a distinguirtipos de variáveis, objetos ou funções, principalmente em relação
+à "case sensitivity" (sensibilidade a maiúsculas e minúsculas), ou seja, o JavaScript
+diferencia letras maiúsculas de minúsculas.
+
+Quando você menciona o uso de "letra maiúscula apenas em modelos", provavelmente está se
+referindo à convenção de nomenclatura para "modelos" ou "classes", que é uma prática comum
+no JavaScript.
+
+### Entendendo as convenções de nomenclatura:
+
+1. **Classes e Construtores**: No JavaScript, é comum usar a **letra maiúscula** para nomear
+classes e funções construtoras. Isso facilita a identificação de que o item é uma **classe**
+e que deveria ser instanciado com `new`.
+   
+   **Exemplo:**
+   ```js
+   class Car {
+       constructor(make, model) {
+           this.make = make;
+           this.model = model;
+       }
+
+       displayInfo() {
+           console.log(`${this.make} ${this.model}`);
+       }
+   }
+
+   // Uso:
+   const myCar = new Car("Toyota", "Corolla");
+   myCar.displayInfo();
+   ```
+
+   Nesse caso, a classe `Car` começa com a letra maiúscula, seguindo a convenção de que
+   **classes e funções construtoras começam com maiúscula**. Isso indica que o `Car` é uma
+   **classe** e você deve usá-la com `new` para criar uma instância.
+
+2. **Objetos e variáveis**: As variáveis e objetos geralmente seguem a convenção de usar
+**letra minúscula** no início. Isso serve para diferenciar de forma clara variáveis comuns
+de classes ou funções construtoras.
+
+   **Exemplo:**
+   ```js
+   let car = {
+       make: "Toyota",
+       model: "Corolla"
+   };
+   ```
+
+3. **Modelos (ou "Models")**: Quando você se refere a "modelos" no contexto de JavaScript,
+pode estar pensando em estruturas ou representações de dados, como objetos, ou até mesmo
+classes que representam modelos de dados (como em um padrão MVC). Nesse caso, as classes
+que representam esses modelos costumam seguir a convenção de começar com letra maiúscula.
+
+   **Exemplo de modelo com classe:**
+   ```js
+   class UserModel {
+       constructor(name, age) {
+           this.name = name;
+           this.age = age;
+       }
+   }
+
+   const user = new UserModel("Alice", 30);
+   ```
+
+### Por que utilizar maiúsculas para classes e minúsculas para variáveis?
+
+1. **Leitura e Identificação**: Facilita a leitura do código. Quando alguém vê uma
+variável com letra minúscula (como `car`), ela entende que é um valor específico.
+Quando vê uma classe com letra maiúscula (como `UserModel`), entende que é um tipo
+ou estrutura que precisa ser instanciado.
+
+2. **Prática Consagrada**: Ao seguir essas convenções, o código fica mais legível e é
+mais fácil para outros desenvolvedores entenderem o propósito das variáveis e funções
+ao revisarem seu código.
+
+### Conclusão:
+No JavaScript, a convenção de usar **letras maiúsculas em classes e modelos**
+(como `UserModel`, `Car`) e **letras minúsculas para variáveis e objetos**
+(como `car`, `user`) ajuda a tornar o código mais organizado e fácil de entender.
+Isso facilita o reconhecimento de tipos e a compreensão do fluxo do programa,
+melhorando a legibilidade e a manutenção do código.
