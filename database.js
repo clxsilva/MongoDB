@@ -25,7 +25,12 @@ const conectar = async () => {
             conectado = true // setar a variável
             console.log("MongoDB Connect")
         } catch (error) {
-            console.error(error)
+            // tratamento de exceções específicas
+            if (error.code = 110000) {
+                console.log(`Erro: O CPF ${cpfCli} já está cadastrado`)
+            } else {
+                console.error(error)
+            }
         }
     }
 }
@@ -46,4 +51,4 @@ const desconectar = async () => {
 }
 
 // exportar para o main os métodos conectar e desconectar
-module.exports = {conectar, desconectar}
+module.exports = { conectar, desconectar }
